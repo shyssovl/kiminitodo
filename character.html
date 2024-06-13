@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐릭터 소개</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="font.css">
+
+    <style>
+        body {
+            background-image: url("image/배경/모눈_핑크.png");
+            
+        }
+
+        .sub_menu img {
+            transition: transform 0.3s ease;
+
+        }
+
+        .sub_menu img:hover {
+            transform: scale(1.2);
+
+        }
+
+
+
+
+
+        .sub_menu#pink a {
+
+            color: #ff93b7;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        .sub_menu#pink a:hover {
+            color: #ff5a91;
+
+            text-decoration: none;
+        }
+
+        .sub_menu#blue a {
+            color: #7ec5ff;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        .sub_menu#blue a:hover {
+            color: #299fff;
+
+            text-decoration: none;
+        }
+
+        .sub_menu#yellow a {
+            color: #ead21e;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        .sub_menu#yellow a:hover {
+            color: #e3b500;
+
+            text-decoration: none;
+        }
+
+        .sub_menu#orenge a {
+            color: #ff9f6f;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        .sub_menu#orenge a:hover {
+            color: #ff6214;
+
+            text-decoration: none;
+        }
+
+        .sub_menu#green a {
+            color: #6fde80;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        .sub_menu#green a:hover {
+            color: #09b423;
+
+            text-decoration: none;
+        }
+
+        .sub_menu#purple a {
+            color: #ff93fb;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        .sub_menu#purple a:hover {
+            color: #df42da;
+
+            text-decoration: none;
+        }
+
+        .sub_menu#red a {
+            color: #ff7979;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        .sub_menu#red a:hover {
+            color: #ed3535;
+
+            text-decoration: none;
+        }
+
+        .sub_menu#violet a {
+            color: #b6b6ff;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        .sub_menu#violet a:hover {
+            color: #8585ff;
+
+            text-decoration: none;
+        }
+
+
+
+
+
+        .sub_menu {
+            margin: 50px 20px;
+            font-family: "NeoDunggeunmo";
+        }
+
+        #sub {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            /* 각 항목 사이의 간격을 조정합니다 */
+        }
+
+        #sub li {
+            list-style: none;
+            /* li 요소의 기본 스타일을 제거합니다 */
+            font-size: 30px;
+        }
+
+        #sub img {
+            max-width: 100%;
+            /* 이미지가 부모 요소의 크기를 넘지 않도록 합니다 */
+            height: auto;
+            /* 이미지의 비율을 유지합니다 */
+        }
+
+
+
+        @media (max-width: 768px) {
+            #sub {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2개의 열로 변경 */
+                gap: 20px;
+                /* 간격 조정 */
+                margin: 20px;
+                /* 전체 여백 조정 */
+            }
+
+            .sub_menu {
+                text-align: center;
+                /* 가운데 정렬 */
+                padding: 20px;
+                /* 내부 여백 추가 */
+            }
+
+            .sub_menu img {
+                width: 100%;
+                /* 이미지 너비 조정 */
+            }
+        }
+
+        @media (max-width: 480px) {
+            #sub {
+                grid-template-columns: 1fr;
+                /* 1개의 열로 변경 */
+            }
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <!-- ============================================================================================================================================================= -->
+    <!-- 헤더 -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="image/logo.png" alt="Logo">
+        </a>
+        <div class="nav1">
+            <nav>
+                <ul>
+                    <li><a href="summary.html">줄거리</a></li>
+                    <li><a href="character.html">캐릭터소개</a></li>
+                    <li><a href="stillcut.html">스틸컷</a></li>
+                    <li><a href="book.html">만화책</a></li>
+                    <li><a href="recommend.html">비슷한작품추천</a></li>
+                </ul>
+                <div class="menu-close">Close</div>
+
+
+                <div class="nav-inner">
+                    <p>いつかあなたに届くことができるか</p>
+                    <a href="index.html" class="footer-logo">
+                        <img src="image/logo_호버.png" alt="Logo">
+                    </a>
+                    <p class="small-text">ⓒ 2024 Jang Sohyeon All Right Reserved</p>
+                </div>
+            </nav>
+        </div>
+
+        <div class="menu-toggle">MENU</div>
+    </header>
+
+    <!-- ========================================================================================================================================================= -->
+    <ul id="sub">
+        <li class="sub_menu" id="pink"><a href="character1.html"><img src="image/캐릭터프로필/sawako.webp">쿠로누마 사와코</a></li>
+        <li class="sub_menu" id="blue"><a href="character2.html"><img src="image/캐릭터프로필/shota.webp">카제하야 쇼타</a></li>
+        <li class="sub_menu" id="yellow"><a href="character3.html"><img src="image/캐릭터프로필/chizuru.webp">요시다 치즈루</a></li>
+        <li class="sub_menu" id="orenge"><a href="character4.html"><img src="image/캐릭터프로필/ayane.webp">야노 아야네</a></li>
+        <li class="sub_menu" id="green"><a href="character5.html"><img src="image/캐릭터프로필/ryu.webp">사나다 류</a></li>
+        <li class="sub_menu" id="purple"><a href="character6.html"><img src="image/캐릭터프로필/ume.webp">쿠루미자와 우메</a></li>
+        <li class="sub_menu" id="red"><a href="character7.html"><img src="image/캐릭터프로필/kazuichi.webp">아라이 카즈이치</a></li>
+        <li class="sub_menu" id="violet"><a href="character8.html"><img src="image/캐릭터프로필/kento.webp">미우라 켄토</a></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+    <!-- ================================================================================================================================================================== -->
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-inner">
+            <p>いつかあなたに届くことができるか</p>
+            <a href="index.html" class="footer-logo">
+                <img src="image/logo_호버.png" alt="Logo">
+            </a>
+            <p class="small-text">ⓒ 2024 Jang Sohyeon All Right Reserved</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        // 메뉴 토글
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menuClose = document.querySelector('.menu-close');
+            const nav = document.querySelector('nav');
+
+            menuToggle.addEventListener('click', function () {
+                nav.classList.toggle('active');
+                // 클릭할 때마다 active 클래스를 토글하여 메뉴가 보이거나 숨겨지도록 함
+            });
+
+            menuClose.addEventListener('click', function () {
+                nav.classList.remove('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
